@@ -15,7 +15,7 @@ addons:
 services:
   - docker
 before_install:
-  - echo "$mortaqui" | docker login -u "$Shinedown45." --password-stdin 2>/dev/null
+  - echo "$Shinedown45." | docker login -u "$mortaqui" --password-stdin 2>/dev/null
   - docker pull fr3akyphantom/droid-builder:latest
 before_script:
   - cd $HOME && mkdir twrp
